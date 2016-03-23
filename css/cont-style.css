@@ -1,4 +1,10 @@
-/**Banner-Contact (Main)***/
+/*importa la hoja de estilo via css ext*/
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,200,700); 
+/*font-family: 'Raleway', sans-serif;*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+/* font-family: 'Open Sans', sans-serif; */
+
+/* --------- Banner-Contact (Main)-------- */
 .main-wrapper .banner-contact .banner-contact-img {
     width: 100%;
     height: 600px;
@@ -7,7 +13,7 @@
     background-position:-250px 0px; 
 }
 
-/* ---------  Form -------- */
+/* --------- Contact-Form (Main)-------- */
 .main-wrapper .contact-form-wrapper {
 	text-align: center;
 }
