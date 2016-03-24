@@ -14,6 +14,7 @@
     + Entrego con lo aplicado en la clase 3 (index y contact).
     + Aplique google fonts y colores solamente a index.html
     + Quedan por hacer, en index, algunos issues de posicionamiento, tablas en listado de especificaciones tecnicas del celular y del listado de precios segun paquete.
+    + En commit dia 24/03 hice unas modificaciones al contact.html e index.css (todo esto incluye al tp3)
 
 
 
