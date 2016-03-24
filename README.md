@@ -1,5 +1,5 @@
-#Repositorio Publico "fundweb-clase1"
-##Incluye lo que hice en la primera clase (10/03/16)
+#Repositorio Publico "fundweb-tp"
+##Este repositorio tendra todo los tp de todas las clases del curso fundamentos web
 
 **Notas:**
 - Durante la clase 1 vimos los conceptos basico de las etiquetas html5 
