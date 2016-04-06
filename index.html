@@ -5,36 +5,44 @@
     <meta charset="UTF-8">
     <title>TP Fundamentos Web</title>
     <link rel="stylesheet" href="css/style.css">
+    <meta name=”viewport” content=”width=device-width”>
 </head>
 
 <body>
     <!--  Header   -->
     <header class="my-header">
-        <img class="header-logo" src="img/header-logo.png" alt="logo">
         <nav class="menu-wrapper">
             <ul class="menu-list">
                 <li class="menu-item"><a href="#">Home</a></li>
                 <li class="menu-item"><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <img class="header-logo" src="img/header-logo.png" alt="logo">
+        <div class="cleaner"></div>
     </header>
+    <section class="banner">
+        <article class="banner-text">
+            <h1 class="banner-title">Regular Updates</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                <br> Omnis ipsa fuga itaque voluptas at id </p>
+        </article>
+    </section>
     <!--  Main Content   -->
     <main class="main-wrapper">
-        <section class="banner">
-            <article class="banner-img"></article>
-        </section>
         <section class="search">
             <form class="search-form">
                 <input type="text" placeholder="Enter your domain name and hit enter">
                 <input class="search-btn" type="submit" value="Search">
+                <div class="cleaner"></div>
             </form>
         </section>
-        <!--         First List (Main)     -->
+        <div class="cleaner"></div>
         <section class="services">
             <article class="service-item">
                 <img src="img/wid1.png" alt="">
                 <h2 class="infoTitle">speed servers</h2>
-                <p>Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit amet,
+                    <br> consectetur adipisicing elit.</p>
             </article>
             <article class="service-item">
                 <img src="img/wid2.png" alt="">
@@ -56,45 +64,67 @@
             </article>
         </section>
         <!-- A Product (Main) -->
-        <section class="product">
-            <article class="product-title">
-                <h1>hostro services</h1>
+        <section class="products">
+            <article class="products-headers">
+                <h1>Hostro Services</h1>
                 <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
             </article>
-            <article class="product-detail">
-                <h1 class="productDetailTitle">Detail 2</h1>
-                <p class="productDetailInfo">Detail 2 Info</p>
-                <span class="productIcon"></span>
-            </article>
-            <article class="product-detail">
-                <h1 class="productDetailTitle">Detail 2</h1>
-                <p class="productDetailInfo">Detail 2 Info</p>
-                <span class="productIcon"></span>
-            </article>
-            <article class="product-detail">
-                <h1 class="productDetailTitle">Detail 3</h1>
-                <p class="productDetailInfo">Detail 3 Info</p>
-                <span class="productIcon"></span>
-            </article>
+            <section class="products-left">
+                <article class="product">
+                    <div class="title-wrapper">
+                        <h1 class="product-title">Detail 1</h1>
+                        <img src="img/ser1.png" alt="icon" class="product-icon">                       
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, elit
+                    necessitatibus dolor</p>
+                </article>
+                <article class="product">
+                    <div class="title-wrapper">
+                        <h1 class="product-title">Detail 2</h1>
+                        <img src="img/ser2.png" alt="icon" class="product-icon">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, elit
+                    necessitatibus dolor</p>
+                </article>
+                <article class="product">
+                    <div class="title-wrapper">
+                        <h1 class="product-title">Detail 3</h1>
+                        <img src="img/ser3.png" alt="icon" class="product-icon">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, elit
+                    necessitatibus dolor</p>
+                </article>
+            </section>
             <!--   Product Image -->
-            <figure class="product-img">
+            <figure class="product-banner">
                 <img src="" alt="product image">
             </figure>
-            <article class="product-detail">
-                <h1 class="productDetailTitle">Detail 4</h1>
-                <p class="productDetailInfo">Detail 4 Info</p>
-                <span class="productIcon"></span>
-            </article>
-            <article class="product-detail">
-                <h1 class="productDetailTitle">Detail 5</h1>
-                <p class="productDetailInfo">Detail 5 Info</p>
-                <span class="productIcon"></span>
-            </article>
-            <article class="product-detail">
-                <h1 class="productDetailTitle">Detail 6</h1>
-                <p class="productDetailInfo">Detail 6 Info</p>
-                <span class="productIcon"></span>
-            </article>
+            <section class="products-right">
+                <article class="product">
+                    <div class="title-wrapper">
+                        <h1 class="product-title">Detail 4</h1>
+                        <img src="img/ser4.png" alt="icon" class="product-icon">
+                    </div>
+                      <p>Lorem ipsum dolor sit amet, elit
+                    necessitatibus dolor</p>
+                </article>
+                <article class="product">
+                    <div class="title-wrapper">
+                        <h1 class="product-title">Detail 5</h1>
+                        <img src="img/ser5.png" alt="icon" class="product-icon">
+                    </div>
+                      <p>Lorem ipsum dolor sit amet, elit
+                    necessitatibus dolor</p>
+                </article>
+                <article class="product">
+                    <div class="title-wrapper">
+                        <h1 class="product-title">Detail 6</h1>
+                        <img src="img/ser6.png" alt="icon" class="product-icon">
+                    </div>
+                      <p>Lorem ipsum dolor sit amet, elit
+                    necessitatibus dolor</p>
+                </article>
+            </section>
         </section>
         <!-- Pricings(Main) -->
         <section class="pricings">
@@ -104,7 +134,7 @@
             </article>
             <article class="combo-wraper">
                 <h2 class="productTitle">small package</h2>
-                <h1 class="productPrice">$15.90</h1>
+                <h1 class="productPrice"><sup>$</sup><i>15</i><sup>.90</sup></h1>
                 <p class="productFeature">Hard drive GB 2</p>
                 <p class="productFeature">Transfer GB 1</p>
                 <p class="productFeature">Data bases 1</p>

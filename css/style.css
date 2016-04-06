@@ -1,93 +1,135 @@
 /*importa la hoja de estilo via css ext*/
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,200,700); 
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,200,700);
+
 /*font-family: 'Raleway', sans-serif;*/
+
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
 /* font-family: 'Open Sans', sans-serif; */
 
 h1 h2 h3 {
     font-family: 'Raleway', sans-serif;
-
 }
+
 body {
     font-family: 'Open Sans', sans-serif;
+    position: relative;
 }
 
+.cleaner {
+    clear: both;
+}
+
+
+/*--------------- Header ----------------*/
 
 .my-header {
     width: 80%;
+    height: 104px;
     margin-left: 10%;
-
 }
+
 .my-header .header-logo {
-   
+    float: left;
+    margin-top: -50px;
 }
 
-/*---------------Menu----------------*/
+/***Menu (Header & Footer)****/
 .menu-wrapper {
-	margin-left: 80%;
+    margin-left: 80%;
     display: inline-block;
 }
+
 .menu-wrapper .menu-list {
-	list-style: none;
-}
-.menu-wrapper .menu-list .menu-item {
-    margin-right: 20px;
-	display: inline-block;
-}
-/***Only Header****/
-.my-header .menu-wrapper .menu-list .menu-item a{
-    color: black;
-	text-decoration: none;
+    list-style: none;
 }
 
-/***Only Footer****/
-.my-footer .menu-wrapper .menu-list .menu-item a{
-    text-decoration: none;
-    color:white;
+.menu-wrapper .menu-list .menu-item {
+    margin-right: 20px;
+    display: inline-block;
 }
+
+/***Menu Headerr****/
+.my-header .menu-wrapper .menu-list .menu-item a {
+    color: black;
+    text-decoration: none;
+}
+
+
+/***Menu Footer****/
+.my-footer .menu-wrapper .menu-list .menu-item a {
+    text-decoration: none;
+    color: white;
+}
+/*------------ End-Header ----------------*/
+
+/*------------- Banner ----------------*/
+.banner {
+    width: 100%;
+    height: 700px;
+    background-image: url(../img/indexbanner-bg3.jpg);
+    background-attachment: scroll;
+    background-position: -180px 0px;
+}
+
+.banner .banner-text {
+    margin-top: 200px;
+    margin-left: 250px;
+    border: 1px solid red;
+    display: inline-block;
+    color: white;
+}
+
+/** Banner-Contact ***/
+.banner .banner-contact {
+    text-align: center;
+}
+
 
 
 /*---------------Main----------------*/
 .main-wrapper {
     width: 80%;
     margin-left: 10%;
+    position: relative;
 }
 
-/**Banner-Index (Main)***/
-.banner .banner-img {
-    width: 100%;
-    height: 600px;
-    background-image:  url(../img/indexbanner-bg3.jpg);
-    background-attachment: scroll;
-    background-position:-280px 0px; 
-}
-
-/**Banner-Contact (Main)***/
-.banner-contact {   
-    text-align: center;
-}
 .main-wrapper .banner-contact .banner-contact-img {
     width: 100%;
     height: 500px;
-    background-image:  url(../img/indexbanner-bg2.jpg);
+    background-image: url(../img/indexbanner-bg2.jpg);
     background-attachment: scroll;
-    background-position:-250px 0px; 
+    background-position: -250px 0px;
 }
 
-.main-wrapper .banner-contact .banner-contact-img .banner-txt { 
+.main-wrapper .banner-contact .banner-contact-img .banner-txt {
     display: inline-block;
     margin-top: 90px;
-    padding: 100px 0px;   
-    color:white;
+    padding: 100px 0px;
+    color: white;
 }
 
+
 /**Search (Main)***/
+
 .main-wrapper .search {
-	height: 100px;
-    text-align: center;
+    height: 100px;
+    width: 1400px;
+    margin: auto;
     padding: 15px 32px;
+    float: left;
+    position: absolute;
+    border: 1px solid red;
+    top: -100px;
+    left: -8px;
 }
-.main-wrapper .search .search-form .search-btn {
+
+.main-wrapper .search .search-form {
+    /* position: relative; */
+}
+
+.main-wrapper .search .search-form input[type=submit] {
     background-color: #00aef3;
     border: none;
     color: white;
@@ -95,18 +137,26 @@ body {
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    height: 98px;
-}
-.main-wrapper .search .search-form input[type=text] {  
-    border:solid 1px #BFBDBD;
-    color: #979797;
-    height: 98px;
-    padding-left:10px;
-    width: 90%;
+    height: 98px; 
+    float: right;   
 }
 
+.main-wrapper .search .search-form input[type=text] {
+    border: solid 1px #BFBDBD;
+    color: #979797;
+    height: 98px;
+    padding-left: 10px;
+    width: 90%;
+    /* width: calc(100% -200px); */
+    font-family: inherit;
+    font-size: 20px;
+}
+
+
 /**Services (Main)***/
+
 .services {
+    padding-top: 100px;
     text-align: center;
 }
 
@@ -122,32 +172,102 @@ body {
 
 
 /*****Product (Main)*****/
-.product {
+
+.products {
+   border: 1px solid red;
+}
+
+.products .products-headers{
     text-align: center;
 }
+.products .products-headers h1 {
 
-.product .product-title {
-    text-align: center;
 }
 
-.product .product-title h1 {
-    text-transform: uppercase;
+.products .products-left {
+    border: 1px solid blue;
+    display: inline-block;
+    float: left;
+}
+.products .products-left .product {
+   
+}
+.products .products-left .product .title-wrapper {
+    border: 1px solid black;
+    display: inline-block;
+    position: relative;
+    left: 70%;
 }
 
-.product .product-detail {
+.products .products-left .product .title-wrapper img{
+    border: 1px solid violet; 
+    position: relative;
+    top:18px;
+
+}
+.products .products-left .product .title-wrapper h1{
     display: inline-block;
 }
 
-.product .product-img {
+.products .products-left .product p{
+    border: 1px solid blue;
+    height: 100px;
+    width: 88%;
+    text-align: right;
+    position: relative;
+    top: -15px;
+}
+
+.products .products-right {
+    border: 1px solid green;
+    display: inline-block;
+    float: right;
+}
+.products .products-right .product {
+    border: 1px solid green;
+    position: relative;
+}
+
+.products .products-right .product .title-wrapper {
+    border: 1px solid red;
+    display: inline-block;
+    position: relative;
+    left: 0;
+
+}
+
+.products .products-right .product .title-wrapper h1{
     display: inline-block;
 }
 
-.product .product-img img {
+.products .products-right .product .title-wrapper img{
+    border: 1px solid red;   
+    position: relative;
+    top:18px;
+
+}
+
+.products .products-right .product  p {
+    border: 1px solid blue;
+    height: 100px;
+    width: 88%;
+    text-align: left;
+    position: relative;
+    top: -15px;
+    left: 17%;
+}
+
+.products .product-banner {
+    display: inline-block;
+}
+
+.products .product-banner img {
     content: url(../img/iphone2.png);
 }
 
 
 /******Prices (Main)*******/
+
 .pricings {
     text-align: center;
 }
@@ -160,12 +280,12 @@ body {
 }
 
 .pricings .combo-wraper {
-	border: 1px solid violet;	
-	margin-right: 20px;
+    border: 1px solid violet;
+    margin-right: 20px;
     display: inline-block;
 }
 
-.pricings .combo-wraper .combo-btn{
+.pricings .combo-wraper .combo-btn {
     background-color: #00aef3;
     border: none;
     color: white;
@@ -184,17 +304,21 @@ body {
 
 
 /******Advertising (Main)*******/
+
 .advertising {
-	height: 100px;
+    height: 100px;
     text-align: center;
     background-color: #142e3f;
     color: white;
 }
-.advertising span{
+
+.advertising span {
     color: #00b2f5;
 }
 
+
 /*---------------Footer----------------*/
+
 .my-footer {
     width: 80%;
     margin-left: 10%;
@@ -202,46 +326,47 @@ body {
     color: white;
 }
 
+
 /* --------- Contact-Form (Main)-------- */
+
 .main-wrapper .contact-form-wrapper {
     text-align: center;
 }
 
-.main-wrapper .contact-form-wrapper .form-header{
-   
-}
+.main-wrapper .contact-form-wrapper .form-header {}
 
-.main-wrapper .contact-form-wrapper .form-content {  
+.main-wrapper .contact-form-wrapper .form-content {
     padding: 20px 20px;
     text-align: center;
 }
 
-.main-wrapper .contact-form-wrapper .form-content .form-col1{
+.main-wrapper .contact-form-wrapper .form-content .form-col1 {
     display: inline-block;
-    width: 40%;    
+    width: 40%;
 }
 
-.main-wrapper .contact-form-wrapper .form-content .form-col2{
+.main-wrapper .contact-form-wrapper .form-content .form-col2 {
     display: inline-block;
     width: 50%;
     height: 190px;
     float: right;
 }
 
-.main-wrapper .contact-form-wrapper .form-content .form-col1 input[type=text]{
-    border:solid 1px #BFBDBD;
+.main-wrapper .contact-form-wrapper .form-content .form-col1 input[type=text] {
+    border: solid 1px #BFBDBD;
     color: #979797;
     height: 48px;
-    padding-left:10px;
+    padding-left: 10px;
     width: 90%;
     margin-bottom: 15px;
 }
+
 .main-wrapper .contact-form-wrapper .form-content .form-col2 textarea {
-   width: 100%;
-   height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
-.main-wrapper .contact-form-wrapper .form-content .form-btn{
+.main-wrapper .contact-form-wrapper .form-content .form-btn {
     background-color: #00aef3;
     border: none;
     color: white;

@@ -1,0 +1,42 @@
+/*importa la hoja de estilo via css ext*/
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,200,700); 
+/*font-family: 'Raleway', sans-serif;*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+/* font-family: 'Open Sans', sans-serif; */
+
+body {
+	font-family: 'Raleway', sans-serif;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+.caja1{
+	font-size: 20px;
+}
+
+.caja2{
+	font-size: 10px;
+}
+
+p{
+	font-size: 2em;
+
+}
+
+h1 {
+	font-weight:  normal; /*con el valor normal le quito la negrita a todos los h1 y como h1 tiene un valor
+							bold mi h1 se va a ver sin negrita*/
+	font-style: italic; 
+	text-align: center;
+	text-transform: uppercase; 
+	text-decoration: underline;
+	letter-spacing: -4px;
+	line-height: 22px;
+}
+
+#iconImg{
+	content: url(../img/index.jpg);
+}
